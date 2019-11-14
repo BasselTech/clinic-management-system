@@ -72,6 +72,7 @@
     <Compile Include="SecretaryPanel.Designer.cs">
       <DependentUpon>SecretaryPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="utils.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
