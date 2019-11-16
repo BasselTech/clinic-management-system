@@ -59,6 +59,12 @@
     <Compile Include="DoctorPanel.Designer.cs">
       <DependentUpon>DoctorPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
       <DependentUpon>SecretaryPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="utils.cs" />
+    <EmbeddedResource Include="DoctorPanel.resx">
+      <DependentUpon>DoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +96,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SecretaryPanel.resx">
+      <DependentUpon>SecretaryPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
