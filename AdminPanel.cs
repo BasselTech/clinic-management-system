@@ -86,6 +86,12 @@ namespace Clinic_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(!validateInputs())
+            {
+                MessageBox.Show("Please check the input fields again!");
+                return;
+            }
+
             SqlConnection con = new SqlConnection(Properties.Resources.connectionString);
             SqlCommand command = con.CreateCommand();
             command.CommandText = "INSERT INTO [user] (user_username, user_password) VALUES(@username, @password)";
@@ -118,6 +124,17 @@ namespace Clinic_Management_System
                 MessageBox.Show("Error while creating the account!");
             con.Close();
             updateList("");
+        }
+
+        private bool validateInputs()
+        {
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+                return false;
+
+            if (comboBox1.SelectedIndex < 0)
+                return false;
+
+            return true;
         }
 
         private void button2_Click(object sender, EventArgs e)
