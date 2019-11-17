@@ -53,6 +53,12 @@
     <Compile Include="AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateReservation.Designer.cs">
+      <DependentUpon>CreateReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorPanel.cs">
       <SubType>Form</SubType>
     </Compile>
