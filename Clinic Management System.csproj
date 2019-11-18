@@ -71,6 +71,12 @@
     <Compile Include="EditProfile.Designer.cs">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditReservation.Designer.cs">
+      <DependentUpon>EditReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

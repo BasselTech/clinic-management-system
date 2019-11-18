@@ -99,6 +99,28 @@ namespace Clinic_Management_System
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            updateForm();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
+            {
+                MessageBox.Show("Please select a reservation!");
+                return;
+            }
+
+            reservation res = (reservation)listBox1.SelectedItem;
+
+            Hide();
+            EditReservation editReservation = new EditReservation(res);
+            editReservation.ShowDialog();
+            updateList();
+            Show();
+        }
+
+        private void updateForm()
+        {
             if (listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
             {
                 MessageBox.Show("Please select a reservation!");
@@ -118,6 +140,5 @@ namespace Clinic_Management_System
             else
                 button1.Enabled = false;
         }
-
     }
 }
