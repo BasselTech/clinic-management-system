@@ -26,5 +26,13 @@ namespace Clinic_Management_System
             editProfile.ShowDialog();
             Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ViewReservations viewReservations = new ViewReservations(account_id);
+            viewReservations.ShowDialog();
+            Show();
+        }
     }
 }

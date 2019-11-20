@@ -119,6 +119,21 @@ namespace Clinic_Management_System
             Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
+            {
+                MessageBox.Show("Please select a reservation!");
+                return;
+            }
+
+            reservation res = (reservation)listBox1.SelectedItem;
+            Hide();
+            Visits visits = new Visits(account_id, res.patient.Key, res.id);
+            visits.ShowDialog();
+            Show();
+        }
+
         private void updateForm()
         {
             if (listBox1.SelectedIndex < 0 || listBox1.SelectedIndex >= listBox1.Items.Count)
@@ -139,6 +154,11 @@ namespace Clinic_Management_System
                 button1.Enabled = true;
             else
                 button1.Enabled = false;
+
+            if (account_type == 1)
+                button2.Enabled = true;
+            else
+                button2.Enabled = false;
         }
     }
 }
