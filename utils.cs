@@ -35,5 +35,27 @@ namespace Clinic_Management_System
             return slots;
         }
 
+        public static void createAdmin(string password)
+        {
+            SqlConnection con = new SqlConnection(Properties.Resources.connectionString);
+            SqlCommand command = con.CreateCommand();
+
+            command.CommandText = "INSERT INTO [user] (user_username, user_password) VALUES (@username, @password)";
+            command.Parameters.AddWithValue("@username", "admin");
+            command.Parameters.AddWithValue("@password", hashPassword(password));
+
+            con.Open();
+
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch(Exception)
+            {
+
+            }
+
+            con.Close();
+        }
     }
 }

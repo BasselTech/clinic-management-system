@@ -81,5 +81,9 @@ namespace Clinic_Management_System
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            utils.createAdmin("123");
+        }
     }
 }

@@ -112,11 +112,26 @@
     <Compile Include="Visits.Designer.cs">
       <DependentUpon>Visits.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateReservation.resx">
+      <DependentUpon>CreateReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoctorPanel.resx">
       <DependentUpon>DoctorPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditReservation.resx">
+      <DependentUpon>EditReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientProfiles.resx">
+      <DependentUpon>PatientProfiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewReservations.resx">
       <DependentUpon>ViewReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visits.resx">
+      <DependentUpon>Visits.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
